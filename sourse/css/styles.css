@@ -9,11 +9,6 @@ body {
   color: #fff;
   background: url("../img/bg-b.jpg") top center no-repeat; }
 
-.autoprefixer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
 .buttons {
   display: inline-block;
   margin-right: 16px;
