@@ -257,12 +257,14 @@ body {
   height: 346px;
   padding: 20px 80px; }
 
-.lk-login-checkbox input[type='checkbox'] {
+.modal-form-login__checkbox-indicator {
   position: relative;
   top: 7px;
-  width: 5px; }
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000; }
 
-.modal-form-login__form a.lk-remeber {
+.modal-form-login__lk-forgot-pass {
   margin-left: 70px;
   color: black; }
 
