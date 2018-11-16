@@ -27,6 +27,16 @@ body {
 .buttons:hover {
   background-color: #663d15; }
 
+.button {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  background-color: #000000;
+  width: 140px;
+  height: 43px;
+  outline: none; }
+
 .page-header {
   height: 70px;
   background: black; }
