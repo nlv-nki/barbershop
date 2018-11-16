@@ -1,0 +1,46 @@
+.modal-form-login {
+  position: relative;
+  position: absolute;
+  z-index: 100;
+  top: 10%;
+  left: 40%;
+  display: none;
+  width: 300px;
+  height: 346px;
+  padding: 20px 80px;
+}
+
+.lk-login-checkbox input[type='checkbox'] {
+  position: relative;
+  top: 7px;
+  width: 5px;
+}
+
+.modal-form-login__form a.lk-remeber {
+  margin-left: 70px;
+  color: black;
+}
+
+.buttons--modal-form {
+  width: 250px;
+  text-align: center;
+}
+
+.modal-form-login__close {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  cursor: pointer;
+}
+
+.modal-form-login input {
+  font-size: 14px;
+  font-weight: 700;
+  width: 300px;
+  height: 30px;
+  margin-right: 20px;
+  margin-bottom: 12px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  border: 2px solid black;
+}

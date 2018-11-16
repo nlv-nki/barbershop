@@ -1,0 +1,30 @@
+
+.user-main-nav {
+  float: right;
+}
+
+.user-main-nav ul {
+  margin: 0;
+}
+
+.user-main-nav ul li {
+  width: 65px;
+  height: 50px;
+  padding-top: 20px;
+  padding-left: 15px;
+  list-style-type: none;
+  text-align: center;
+  background: url(../img/login.svg) 10px 23px no-repeat;
+}
+
+.user-main-nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.user-main-nav ul li:hover {
+  cursor: pointer;
+  background-color: #242424;
+}

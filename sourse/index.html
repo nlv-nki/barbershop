@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп Бородински - Главная</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <meta name="viewport" index-content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <header class="page-header">
+
+    <div class="page-header__wrapper">
+
+      <a class="page-header__logo">
+				<img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
+			</a>
+
+      <nav class="main-nav">
+
+        <ul>
+          <li class="active"><a href="#nowhere" title="Lorum ipsum dolor sit amet">ИНФОРМАЦИЯ</a></li>
+          <li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">НОВОСТИ</a></li>
+          <li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">МАГАЗИН</a></li>
+          <li><a href="#nowhere" title="Pellentesque fermentum dolor">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+
+      <nav class="user-main-nav">
+        <ul>
+          <li><a href="#">ВХОД</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="features">
+      <div class="features__item">
+        <h2>Быстро</h2>
+        <img src="img/rumbs.png">
+
+        <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+      </div>
+      <div class="features__item">
+        <h2>Круто</h2>
+        <img src="img/rumbs.png">
+        <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
+          МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
+          ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.
+        </p>
+      </div>
+      <div class="features__item">
+        <h2>Дорого</h2>
+        <img src="img/rumbs.png">
+
+        <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+      </div>
+    </section>
+
+    <section class="index-content index-content--line news">
+      <h2>НОВОСТИ</h2>
+
+      <p class="news-descriptions">
+        НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+
+        <span class="news-date">11 января</span>
+      </p>
+
+
+      <p class="news-descriptions">
+        НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ2
+
+        <span class="news-date">18 января</span>
+      </p>
+      <a class="buttons" href="#">Все новости</a>
+
+    </section>
+
+    <section class="index-content gallery">
+      <h2>Фото</h2>
+      <img src="img/barbershopinner.jpg" />
+      <div class="gallery-controls">
+        <a class="buttons" href="#">Назад</a>
+        <a class="buttons" href="#">Вперед</a>
+
+      </div>
+
+    </section>
+
+    <section class="index-content index-content--line contacts">
+      <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+
+      <p class="contacts-info">БАРБЕРШОП «БОРОДИНСКИЙ»
+        АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
+        ТЕЛЕФОН: +7 (495) 666-02-66</p>
+
+      <p class="contacts-info">
+        ВРЕМЯ РАБОТЫ:
+        ПН—ПТ: С 10:00 ДО 22:00
+        СБ—ВС: С 10:00 ДО 19:00
+      </p>
+
+      <div class="block-controls">
+        <a class="buttons"  href="#">КАК ПРОЕХАТЬ</a>
+        <a class="buttons"  href="#">ОБРАТНАЯ СВЯЗЬ</a>
+
+      </div>
+
+    </section>
+    <section class="index-content order">
+      <h2>ЗАПИСАТЬСЯ</h2>
+      <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+      <form class="order-form" action="#" method="post">
+
+        <div class="order-form__cell-wrap">
+          <div class="order-form__order-form-cell">
+            <label for="order-date-field">ДАТА</label>
+            <input type="text" id="order-date-field" name="order-date" placeholder="21.11.12">
+
+								</div>
+
+          <div class="order-form__order-form-cell">
+
+            <label for="order-time-field">ВРЕМЯ</label>
+            <input type="text" id="order-time-field" name="order-time" placeholder="21:00">
+
+								</div>
+
+
+          <div class="order-form__order-form-cell">
+            <label for="order-name-field">ВАШЕ ИМЯ</label>
+            <input type="text" id="order-name-field" name="order-nane" placeholder="Николай">
+
+								</div>
+
+          <div class="order-form__order-form-cell">
+
+            <label for="order-tel-field">ТЕЛЕФОН</label>
+
+            <input type="text" id="order-tel-field" name="order-tel" placeholder="+7 (111) 777-11-11">
+
+								</div>
+        </div>
+
+        <a class="buttons buttons--order-button" href="#">ОТПРАВИТЬ</a>
+
+      </form>
+    </section>  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer-contacts">
+        <p>БАРБЕРШОП «БОРОДИНСКИЙ»
+          АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8
+        </p>
+        <p>
+          КАК НАС НАЙТИ? </p>
+        <p>
+          ТЕЛЕФОН: +7 (495) 666-02-66</p>
+      </section>
+
+
+
+      <section class="footer-social">
+        <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+
+
+        <div class="footer-social-box-list">
+
+          <span class="footer-social-box">
+			<img src="img/vk.svg" />
+			</span>
+
+
+          <span class="footer-social-box">
+			<img src="img/facebook.svg" />
+			</span>
+
+
+          <span class="footer-social-box">
+			<img src="img/instagram.svg" />
+			</span>
+
+        </div>
+
+
+      </section>
+      <section class="footer-copyright">
+
+        <p>Разработано </p>
+        <a class="buttons"  href="#">red eyes</a>
+
+      </section>
+
+    </div>
+
+  </footer>
+  <!-- modal window -->
+  <div class="fade-out"></div>
+  <div class="index-content modal-form-login">
+    <img src="img/cross.png" class="modal-form-login__close">
+    <h2>личный кабинет</h2>
+    <p>ВВедите пожалуйста свой логин и пароль</p>
+    <form class="modal-form-login__form" action="#" method="post">
+      <div>
+        <input type="type" name="lk-login" id="lk-login-field">
+        <input type="type" name="lk-pass" id="lk-pass-field">
+
+				</div>
+
+      <label class="lk-login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span> Запомнить меня
+        </label>
+
+
+      <a href="#" class="lk-remeber">я забыл пароль</a>
+      <a href="#" class="buttons buttons--modal-form">войти</a>
+
+    </form>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

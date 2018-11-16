@@ -1,0 +1,34 @@
+.order-form__order-form-cell  p {
+  margin-bottom: 0;
+}
+
+.order-form__order-form-cell input {
+  width: 130px;
+  height: 30px;
+  margin-right: 20px;
+  border: 2px solid black;
+  color: red;
+}
+
+.order-form__order-form-cell input::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.order-form__order-form-cell {
+  float: left;
+  width: 150px;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+
+.order-form__order-form-cell label {
+  margin-left: 16px;
+}
+
+.order-form__order-form-cell input {
+  font-size: 14px;
+  font-weight: 700;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
