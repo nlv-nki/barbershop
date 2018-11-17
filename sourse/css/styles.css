@@ -28,6 +28,7 @@ body {
   background-color: #663d15; }
 
 .button {
+  margin-right: 20px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
@@ -155,9 +156,6 @@ body {
 
 .gallery img {
   margin-bottom: 30px; }
-
-.gallery-controls a:first-child {
-  margin-right: 75px; }
 
 .order-form__order-form-cell p {
   margin-bottom: 0; }
