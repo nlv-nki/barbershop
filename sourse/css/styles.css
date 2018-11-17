@@ -37,6 +37,9 @@ body {
   height: 43px;
   outline: none; }
 
+.button--long {
+  width: 300px; }
+
 .page-header {
   height: 70px;
   background: black; }
