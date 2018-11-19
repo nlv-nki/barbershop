@@ -115,7 +115,7 @@
       <h2>ЗАПИСАТЬСЯ</h2>
       <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
       <form class="order-form" action="#" method="post">
-
+<!--
         <div class="order-form__cell-wrap">
           <div class="order-form__order-form-cell">
             <label for="order-date-field">ДАТА</label>
@@ -145,8 +145,31 @@
 
 								</div>
         </div>
+-->
+        <div class="order-form__cell-wrap">
+          <div class="order-form__row">
+            <div class="order-form__cell">
+              <label>Дата</label>
+              <input type="text" placeholder="08.10.2018" />
+            </div>
+            <div class="order-form__cell">
+              <label>Время</label>
+              <input type="text" placeholder="13:10"  />
+            </div>
+        </div>
+        <div class="order-form__row">
+          <div class="order-form__cell">
+            <label>Ваше имя</label>
+            <input type="text" placeholder="Иван" />
+          </div>
+          <div class="order-form__cell">
+            <label>Телефон</label>
+            <input type="text" placeholder="+7 112 123-37-37"  />
+          </div>
+        </div>
+        </div>
 
-        <a class="button button--long" href="#">ОТПРАВИТЬ</a>
+        <a class="button button--long order-form__button" href="#">ОТПРАВИТЬ</a>
 
       </form>
     </section>  </main>
