@@ -200,7 +200,7 @@ input::placeholder {
 .order-form__button {
   margin-top: 5px; }
 
-.footer .buttons:hover {
+.footer .button:hover {
   color: #000;
   color: #f00;
   background-color: #fff; }
