@@ -43,6 +43,9 @@ body {
 .button--long {
   width: 250px; }
 
+.button:hover {
+  background-color: #663d15; }
+
 .box-button {
   width: 43px;
   min-height: 43px;
