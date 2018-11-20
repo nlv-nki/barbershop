@@ -244,10 +244,6 @@ input::placeholder {
   width: 22px;
   height: 22px; }
 
-.social-nets__bg:hover {
-  background-color: #fff;
-  color: black; }
-
 .fade-out {
   position: absolute;
   z-index: 99;
