@@ -1,4 +1,4 @@
-.footer .buttons:hover {
+.footer .button:hover {
   color: #000;
   color: #f00;
   background-color: #fff;
@@ -22,39 +22,12 @@
   margin-right: 90px;
 }
 
-.footer-social {
+.footer__social {
   float: left;
-  width: 130px;
-  margin-right: 260px;
-  text-align: right;
-}
-
-.footer-social-box-list {
-  display: table;
-  border-spacing: 6px;
-  border-collapse: separate;
-}
-
-.footer-social-box {
-  display: table-cell;
-  width: 43px;
-  height: 43px;
-  margin: 6px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: black;
-}
-
-.footer-social-box img {
-  margin: 10px;
 }
 
 .footer-copyright {
   float: right;
   width: 150px;
   text-align: center;
-}
-
-.footer-copyright p {
-  margin-bottom: 30px;
 }

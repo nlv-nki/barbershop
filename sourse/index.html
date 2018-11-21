@@ -3,18 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп Бородински - Главная</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--bxslider -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+     $(document).ready(function(){
+       $('.slider').bxSlider({
+         auto:true,
+         slideWidth: 300,
+         pager: false,
+         nextText:'Вперед',
+         slideSelector: 'img',
+         prevSelector: '.slider__prev_btn',
+         prevText: 'Назад',
+         autoControlsSelector: '.gallery__controls',
+         nextSelector: '.slider__next_btn',
+       });
+     });
+   </script>
   <meta name="viewport" index-content="width=device-width,initial-scale=1">
 </head>
 <body>
   <header class="page-header">
-
     <div class="page-header__wrapper">
-
       <a class="page-header__logo">
 				<img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
 			</a>
-
       <nav class="main-nav">
 
         <ul>
@@ -25,7 +44,6 @@
           <li><a href="#nowhere" title="Pellentesque fermentum dolor">КОНТАКТЫ</a></li>
         </ul>
       </nav>
-
       <nav class="user-main-nav">
         <ul>
           <li><a href="#">ВХОД</a></li>
@@ -34,6 +52,7 @@
       </nav>
     </div>
   </header>
+
   <main class="page-main">
     <section class="features">
       <div class="features__item">
@@ -60,31 +79,31 @@
 
     <section class="index-content index-content--line news">
       <h2>НОВОСТИ</h2>
-
-      <p class="news-descriptions">
+      <p class="news__descriptions">
         НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
-
         <span class="news-date">11 января</span>
       </p>
-
-
-      <p class="news-descriptions">
+      <p class="news__descriptions">
         НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ2
-
         <span class="news-date">18 января</span>
       </p>
-      <a class="buttons" href="#">Все новости</a>
-
+      <a class="button" href="#">ВСЕ НОВОСТИ</a>
     </section>
 
-    <section class="index-content gallery">
+    <section class="index-content">
       <h2>Фото</h2>
-      <img src="img/barbershopinner.jpg" />
-      <div class="gallery-controls">
-        <a class="buttons" href="#">Назад</a>
-        <a class="buttons" href="#">Вперед</a>
+      <div class="gallery ">
+          <div class="slider">
 
-      </div>
+          <img src="img/barbershopinner.jpg" />
+          <img src="./img/barber-inner2.png" />
+        </div>
+
+          <div class="gallery__controls">
+            <a class="button slider__prev_btn" ></a>
+            <a class="button slider__next_btn" ></a>
+          </div>
+    </div>
 
     </section>
 
@@ -94,7 +113,6 @@
       <p class="contacts-info">БАРБЕРШОП «БОРОДИНСКИЙ»
         АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8
         ТЕЛЕФОН: +7 (495) 666-02-66</p>
-
       <p class="contacts-info">
         ВРЕМЯ РАБОТЫ:
         ПН—ПТ: С 10:00 ДО 22:00
@@ -102,9 +120,8 @@
       </p>
 
       <div class="block-controls">
-        <a class="buttons"  href="#">КАК ПРОЕХАТЬ</a>
-        <a class="buttons"  href="#">ОБРАТНАЯ СВЯЗЬ</a>
-
+        <a class="button"  href="#">КАК ПРОЕХАТЬ</a>
+        <a class="button"  href="#">ОБРАТНАЯ СВЯЗЬ</a>
       </div>
 
     </section>
@@ -112,41 +129,34 @@
       <h2>ЗАПИСАТЬСЯ</h2>
       <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
       <form class="order-form" action="#" method="post">
-
         <div class="order-form__cell-wrap">
-          <div class="order-form__order-form-cell">
-            <label for="order-date-field">ДАТА</label>
-            <input type="text" id="order-date-field" name="order-date" placeholder="21.11.12">
-
-								</div>
-
-          <div class="order-form__order-form-cell">
-
-            <label for="order-time-field">ВРЕМЯ</label>
-            <input type="text" id="order-time-field" name="order-time" placeholder="21:00">
-
-								</div>
-
-
-          <div class="order-form__order-form-cell">
-            <label for="order-name-field">ВАШЕ ИМЯ</label>
-            <input type="text" id="order-name-field" name="order-nane" placeholder="Николай">
-
-								</div>
-
-          <div class="order-form__order-form-cell">
-
-            <label for="order-tel-field">ТЕЛЕФОН</label>
-
-            <input type="text" id="order-tel-field" name="order-tel" placeholder="+7 (111) 777-11-11">
-
-								</div>
+          <div class="order-form__row">
+            <div class="order-form__cell">
+              <label>Дата</label>
+              <input type="text" placeholder="08.10.2018" />
+            </div>
+            <div class="order-form__cell">
+              <label>Время</label>
+              <input type="text" placeholder="13:10"  />
+            </div>
         </div>
-
-        <a class="buttons buttons--order-button" href="#">ОТПРАВИТЬ</a>
-
+        <div class="order-form__row">
+          <div class="order-form__cell">
+            <label>Ваше имя</label>
+            <input type="text" placeholder="Иван" />
+          </div>
+          <div class="order-form__cell">
+            <label>Телефон</label>
+            <input type="text" placeholder="+7 112 123-37-37"  />
+          </div>
+        </div>
+        </div>
+        <a class="button button--long order-form__button" href="#">ОТПРАВИТЬ</a>
       </form>
-    </section>  </main>
+
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="footer__wrapper">
       <section class="footer-contacts">
@@ -159,37 +169,15 @@
           ТЕЛЕФОН: +7 (495) 666-02-66</p>
       </section>
 
-
-
-      <section class="footer-social">
+      <section class="footer__social">
         <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
-
-
-        <div class="footer-social-box-list">
-
-          <span class="footer-social-box">
-			<img src="img/vk.svg" />
-			</span>
-
-
-          <span class="footer-social-box">
-			<img src="img/facebook.svg" />
-			</span>
-
-
-          <span class="footer-social-box">
-			<img src="img/instagram.svg" />
-			</span>
-
-        </div>
-
-
+      <button class="box-button social-nets">		<img class="social-nets__s-icon" src="img/facebook.svg" /></button>
+      <button class="box-button social-nets">		<img class="social-nets__s-icon" src="img/instagram.svg" /></button>
+      <button class="box-button social-nets">		<img class="social-nets__s-icon" src="img/vk.svg" /> </button>
       </section>
       <section class="footer-copyright">
-
         <p>Разработано </p>
-        <a class="buttons"  href="#">red eyes</a>
-
+        <a class="button"  href="#">red eyes</a>
       </section>
 
     </div>
@@ -205,18 +193,13 @@
       <div>
         <input type="type" name="lk-login" id="lk-login-field">
         <input type="type" name="lk-pass" id="lk-pass-field">
-
 				</div>
-
-      <label class="lk-login-checkbox">
+      <label class="modal-form-login__lk-remember-checkbox">
           <input type="checkbox" name="remember">
-          <span class="checkbox-indicator"></span> Запомнить меня
+          <span class="modal-form-login__checkbox-indicator"></span> Запомнить меня
         </label>
-
-
-      <a href="#" class="lk-remeber">я забыл пароль</a>
-      <a href="#" class="buttons buttons--modal-form">войти</a>
-
+      <a href="#" class="modal-form-login__lk-forgot-pass">я забыл пароль</a>
+      <a href="#" class="buttons button--long">войти</a>
     </form>
   </div>
   <script type="text/javascript" src="js/script.js"></script>

@@ -27,6 +27,31 @@ body {
 .buttons:hover {
   background-color: #663d15; }
 
+.button {
+  margin-right: 20px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+  border: 0;
+  background-color: #000000;
+  padding: 10px 25px;
+  outline: none;
+  width: 90px; }
+
+.button--long {
+  width: 250px; }
+
+.button:hover {
+  background-color: #663d15; }
+
+.box-button {
+  width: 43px;
+  min-height: 43px;
+  background-color: black;
+  border: 0; }
+
 .page-header {
   height: 70px;
   background: black; }
@@ -119,9 +144,6 @@ body {
 .index-content--line {
   background: url(../img/sections-line.png) no-repeat right center, url("../img/white-bg.jpg") repeat center; }
 
-.index-content p {
-  margin-bottom: 30px; }
-
 .index-content p span {
   display: block; }
 
@@ -139,53 +161,62 @@ body {
   width: 260px; }
 
 .gallery img {
-  margin-bottom: 30px; }
+  border: 10px solid white; }
 
-.gallery-controls a:first-child {
-  margin-right: 75px; }
+.gallery a {
+  text-decoration: none;
+  color: white; }
 
-.order-form__order-form-cell p {
-  margin-bottom: 0; }
+.gallery__controls {
+  margin-top: -30px; }
 
-.order-form__order-form-cell input {
-  width: 130px;
-  height: 30px;
-  margin-right: 20px;
-  border: 2px solid black;
-  color: red; }
+.order-form__cell-wrap {
+  width: 300px;
+  padding-bottom: 10px; }
 
-.order-form__order-form-cell input::-webkit-input-placeholder {
-  font-size: 14px;
-  font-weight: bold; }
-
-.order-form__order-form-cell input:-ms-input-placeholder {
-  font-size: 14px;
-  font-weight: bold; }
-
-.order-form__order-form-cell input::-ms-input-placeholder {
-  font-size: 14px;
-  font-weight: bold; }
-
-.order-form__order-form-cell input::placeholder {
-  font-size: 14px;
-  font-weight: bold; }
-
-.order-form__order-form-cell {
-  float: left;
+.order-form__cell {
   width: 150px;
-  margin-top: 12px;
-  margin-right: 20px; }
+  float: left;
+  margin-bottom: 15px; }
 
-.order-form__order-form-cell label {
+.order-form__cell input {
+  font-size: 14px;
+  font-weight: bold;
+  width: 123px;
+  height: 30px;
+  border: 2px solid black;
+  outline: none;
+  padding-left: 14px; }
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: bold; }
+
+input:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: bold; }
+
+input::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: bold; }
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: bold; }
+
+.order-form__cell:nth-child(2n) input {
+  margin-left: 7px; }
+
+.order-form__cell:nth-child(2n) label {
+  margin-left: 21px; }
+
+.order-form__cell label {
   margin-left: 16px; }
 
-.order-form__order-form-cell input {
-  font-size: 14px;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase; }
+.order-form__button {
+  margin-top: 5px; }
 
-.footer .buttons:hover {
+.footer .button:hover {
   color: #000;
   color: #f00;
   background-color: #fff; }
@@ -205,36 +236,17 @@ body {
   width: 310px;
   margin-right: 90px; }
 
-.footer-social {
-  float: left;
-  width: 130px;
-  margin-right: 260px;
-  text-align: right; }
-
-.footer-social-box-list {
-  display: table;
-  border-spacing: 6px;
-  border-collapse: separate; }
-
-.footer-social-box {
-  display: table-cell;
-  width: 43px;
-  height: 43px;
-  margin: 6px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: black; }
-
-.footer-social-box img {
-  margin: 10px; }
+.footer__social {
+  float: left; }
 
 .footer-copyright {
   float: right;
   width: 150px;
   text-align: center; }
 
-.footer-copyright p {
-  margin-bottom: 30px; }
+.social-nets__s-icon {
+  width: 22px;
+  height: 22px; }
 
 .fade-out {
   position: absolute;
@@ -257,12 +269,14 @@ body {
   height: 346px;
   padding: 20px 80px; }
 
-.lk-login-checkbox input[type='checkbox'] {
+.modal-form-login__checkbox-indicator {
   position: relative;
   top: 7px;
-  width: 5px; }
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000; }
 
-.modal-form-login__form a.lk-remeber {
+.modal-form-login__lk-forgot-pass {
   margin-left: 70px;
   color: black; }
 
