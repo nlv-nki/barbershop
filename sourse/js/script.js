@@ -24,4 +24,4 @@ class Gallery {
       `;
   }
 }
-new Gallery({element: document.querySelector('.gallery')})
+//new Gallery({element: document.querySelector('.gallery')})

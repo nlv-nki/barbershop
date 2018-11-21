@@ -5,7 +5,19 @@
   <title>Барбершоп Бородински - Главная</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--bxslider -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script>
+     $(document).ready(function(){
+       $('.slider').bxSlider({auto:true,  slideWidth: 300});
+
+
+     });
+   </script>
   <meta name="viewport" index-content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -72,7 +84,15 @@
 
     <section class="index-content">
       <h2>Фото</h2>
-      <div class="gallery">
+      <div class="gallery slider">
+        <div>
+          <img src="img/barbershopinner.jpg" />
+        </div>
+
+        <div>
+          <img src="./img/barber-inner2.png" />
+        </div>
+
     </div>
     </section>
 
