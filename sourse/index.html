@@ -13,7 +13,17 @@
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <script>
      $(document).ready(function(){
-       $('.slider').bxSlider({auto:true,  slideWidth: 300});
+       $('.slider').bxSlider({
+         auto:true,
+         slideWidth: 300,
+         pager: false,
+         nextText:'Вперед',
+         slideSelector: 'img',
+         prevSelector: '.slider__prev_btn',
+         prevText: 'Назад',
+         autoControlsSelector: '.gallery__controls',
+        nextSelector: '.slider__next_btn'
+       });
 
 
      });
@@ -84,16 +94,19 @@
 
     <section class="index-content">
       <h2>Фото</h2>
-      <div class="gallery slider">
-        <div>
-          <img src="img/barbershopinner.jpg" />
-        </div>
+      <div class="gallery ">
+          <div class="slider">
 
-        <div>
+          <img src="img/barbershopinner.jpg" />
           <img src="./img/barber-inner2.png" />
         </div>
 
+          <div class="gallery__controls">
+            <a class="button slider__prev_btn" ></a>
+            <a class="button slider__next_btn" ></a>
+          </div>
     </div>
+
     </section>
 
     <section class="index-content index-content--line contacts">

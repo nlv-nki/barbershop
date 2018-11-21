@@ -2,6 +2,10 @@
   border: 10px solid white;
 }
 
+.gallery a {
+  text-decoration: none;
+  color: white;
+}
 .gallery__controls {
-  margin-top: 30px;
+  margin-top: -30px;
 }
