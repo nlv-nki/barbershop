@@ -8,24 +8,47 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
   <!--bxslider -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <!-- Magnific Popup core JS file -->
+  <script src="js/jquery.magnific-popup.min.js" defer></script>
+  <!-- scripts -->
+  <!--
   <script>
      $(document).ready(function(){
-       $('.slider').bxSlider({
-         auto:true,
-         slideWidth: 300,
-         pager: false,
-         nextText:'Вперед',
-         slideSelector: 'img',
-         prevSelector: '.slider__prev_btn',
-         prevText: 'Назад',
-         autoControlsSelector: '.gallery__controls',
-         nextSelector: '.slider__next_btn',
+
+
+
+       $('.user-main-nav__login').magnificPopup({
+         type: 'inline',
+         preloader: false,
+         modal: true
        });
+       $(document).on('click', '.modal-form-login__close', function (e) {
+         e.preventDefault();
+         $.magnificPopup.close();
+       });
+
+
+      let param = {
+        auto:true,
+        slideWidth: 300,
+        pager: false,
+        nextText:'Вперед',
+        slideSelector: 'img',
+        prevSelector: '.slider__prev_btn',
+        prevText: 'Назад',
+        autoControlsSelector: '.gallery__controls',
+        nextSelector: '.slider__next_btn',
+      }
+
+       $('.slider').bxSlider(param);
      });
    </script>
+  -->
   <meta name="viewport" index-content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -46,7 +69,7 @@
       </nav>
       <nav class="user-main-nav">
         <ul>
-          <li><a href="#">ВХОД</a></li>
+          <li><a class="user-main-nav__login" href="#login-popup">ВХОД</a></li>
 
         </ul>
       </nav>
@@ -184,8 +207,8 @@
 
   </footer>
   <!-- modal window -->
-  <div class="fade-out"></div>
-  <div class="index-content modal-form-login">
+<!--   <div class="fade-out"></div> -->
+  <div id="login-popup" class="index-content modal-form-login  mfp-hide">
     <img src="img/cross.png" class="modal-form-login__close">
     <h2>личный кабинет</h2>
     <p>ВВедите пожалуйста свой логин и пароль</p>
