@@ -14,41 +14,8 @@
   <!--bxslider -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <!-- Magnific Popup core JS file -->
-  <script src="js/jquery.magnific-popup.min.js" defer></script>
-  <!-- scripts -->
-  <!--
-  <script>
-     $(document).ready(function(){
+  <script src="js/jquery.magnific-popup.min.js"></script>
 
-
-
-       $('.user-main-nav__login').magnificPopup({
-         type: 'inline',
-         preloader: false,
-         modal: true
-       });
-       $(document).on('click', '.modal-form-login__close', function (e) {
-         e.preventDefault();
-         $.magnificPopup.close();
-       });
-
-
-      let param = {
-        auto:true,
-        slideWidth: 300,
-        pager: false,
-        nextText:'Вперед',
-        slideSelector: 'img',
-        prevSelector: '.slider__prev_btn',
-        prevText: 'Назад',
-        autoControlsSelector: '.gallery__controls',
-        nextSelector: '.slider__next_btn',
-      }
-
-       $('.slider').bxSlider(param);
-     });
-   </script>
-  -->
   <meta name="viewport" index-content="width=device-width,initial-scale=1">
 </head>
 <body>
@@ -219,12 +186,12 @@
 				</div>
       <label class="modal-form-login__lk-remember-checkbox">
           <input type="checkbox" name="remember">
-          <span class="modal-form-login__checkbox-indicator"></span> Запомнить меня
+        Запомнить меня
         </label>
       <a href="#" class="modal-form-login__lk-forgot-pass">я забыл пароль</a>
-      <a href="#" class="buttons button--long">войти</a>
+      <a href="#" class="button button--long">войти</a>
     </form>
   </div>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script.js" defer></script>
 </body>
 </html>
