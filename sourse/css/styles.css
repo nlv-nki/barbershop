@@ -137,11 +137,15 @@ body {
   background-color: #242424; }
 
 .page-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 940px;
   margin: 0 auto; }
 
 .index-content {
-  float: left;
   width: 380px;
   height: 370px;
   margin-bottom: 36px;
