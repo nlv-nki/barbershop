@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'PT Sans Narrow', Arial, sans-serif;
   font-size: 14px;
@@ -56,14 +57,23 @@ body {
   height: 70px;
   background: black; }
 
+/* переопределены ниже для flex */
 .page-header__wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 960px;
   margin: 0 auto; }
 
 .page-header__logo {
-  /* z-index: -1; */
-  position: absolute;
-  top: 70px;
+  -webkit-box-ordinal-group: 11;
+      -ms-flex-order: 10;
+          order: 10;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   margin-left: 300px; }
 
 .main-nav {
