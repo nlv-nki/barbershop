@@ -42,7 +42,8 @@ body {
   width: 90px; }
 
 .button--long {
-  width: 250px; }
+  width: 250px;
+  margin-top: 30px; }
 
 .button:hover {
   background-color: #663d15; }
@@ -679,7 +680,7 @@ img.mfp-img {
   right: -30px;
   cursor: pointer; }
 
-.modal-form-login input {
+.modal-form-login__data-fileld {
   font-size: 14px;
   font-weight: 700;
   width: 300px;
@@ -689,3 +690,6 @@ img.mfp-img {
   padding-left: 10px;
   text-transform: uppercase;
   border: 2px solid black; }
+
+.modal-form-login__checkbox-remember {
+  margin-right: 5px; }
