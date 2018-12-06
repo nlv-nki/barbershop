@@ -11,8 +11,27 @@
   margin: 0 auto;
 }
 
+.page-header__wrapper--logo-s {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
 .page-header__logo {
   order: 10;
   align-self: flex-end;
   margin-left: 300px;
+}
+
+
+.page-header__logo--catalog {
+  align-self: flex-start;
+  order: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+.page-header__logo--catalog img {
+  height: auto;
+  width: 120px;
 }
