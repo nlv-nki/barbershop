@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'PT Sans Narrow', Arial, sans-serif;
   font-size: 14px;
@@ -164,7 +165,29 @@ body {
   margin: 0 auto; }
 
 .page-catalog {
-  background: url(../img/white-bg.jpg) repeat center; }
+  background: url(../img/white-bg.jpg) repeat center;
+  margin: 0 auto;
+  width: 940px;
+  /*временно для всех элементов */
+  color: #000000; }
+
+.page-catalog__inner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.page-catalog__shop-filters {
+  width: 230px;
+  margin: 10px;
+  outline: 1px solid green; }
+
+.page-catalog__shop-items {
+  outline: 1px solid red;
+  width: 700px;
+  margin: 10px; }
 
 .index-content {
   width: 380px;

@@ -1,3 +1,27 @@
 .page-catalog {
       background: url(../img/white-bg.jpg) repeat center;
+      margin: 0 auto;
+      width: 940px;
+      /*временно для всех элементов */
+      color: #000000;
+
+}
+
+.page-catalog__inner-content {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.page-catalog__shop-filters{
+  width: 230px;
+  margin: 10px;
+  outline: 1px solid green;
+
+}
+.page-catalog__shop-items {
+  outline: 1px solid red;
+  width: 700px;
+  margin: 10px;
+
 }
