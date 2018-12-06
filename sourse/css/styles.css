@@ -9,6 +9,9 @@ body {
   color: #fff;
   background: url("../img/bg-b.jpg") top center no-repeat; }
 
+.body-page-catalog {
+  background: url(../img/white-bg.jpg) repeat center; }
+
 .buttons {
   display: inline-block;
   margin-right: 16px;
