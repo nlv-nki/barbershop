@@ -198,8 +198,27 @@ body {
 
 .page-catalog__shop-items {
   outline: 1px solid red;
-  width: 700px;
-  margin: 10px; }
+  width: 850px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.page-catalog__shop-item {
+  width: 200px;
+  height: 290px;
+  background-color: #f7f7f7;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding-top: 0px; }
+
+.page-catalog__shop-item img {
+  width: 200px; }
 
 .index-content {
   width: 380px;

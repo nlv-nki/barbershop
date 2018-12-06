@@ -21,7 +21,27 @@
 }
 .page-catalog__shop-items {
   outline: 1px solid red;
-  width: 700px;
+  width: 850px;
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
 
+}
+
+
+.page-catalog__shop-item {
+
+  width: 200px;
+  height: 290px;
+  background-color: #f7f7f7;
+  margin: 10px;
+  margin-bottom: 20px;
+  //padding: 16px;
+  padding-top: 0px;
+
+}
+
+.page-catalog__shop-item  img {
+  width: 200px;
 }
