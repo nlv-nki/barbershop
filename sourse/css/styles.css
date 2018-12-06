@@ -31,6 +31,18 @@ body {
 .buttons:hover {
   background-color: #663d15; }
 
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.breadcrumbs li {
+  list-style-type: none;
+  margin-right: 15px; }
+
 .button {
   margin-right: 25px;
   text-decoration: none;
