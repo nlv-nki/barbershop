@@ -3,15 +3,35 @@
   background: black;
 }
 
-
 .page-header__wrapper {
+  flex-wrap: wrap;
+  height: 300px;
+  display: flex;
   width: 960px;
   margin: 0 auto;
 }
 
+.page-header__wrapper--logo-s {
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
 .page-header__logo {
-  /* z-index: -1; */
-  position: absolute;
-  top: 70px;
+  order: 10;
+  align-self: flex-end;
   margin-left: 300px;
+}
+
+
+.page-header__logo--catalog {
+  align-self: flex-start;
+  order: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+.page-header__logo--catalog img {
+  height: auto;
+  width: 120px;
 }

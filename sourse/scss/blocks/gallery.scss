@@ -1,7 +1,13 @@
 .gallery img {
-  margin-bottom: 30px;
+  border: 10px solid white;
 }
 
-.gallery-controls a:first-child {
-  margin-right: 75px;
+.gallery a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.gallery__controls {
+  margin-top: -30px;
 }
