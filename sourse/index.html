@@ -1,55 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп Бородински - Главная</title>
+  <meta name="viewport" index-content="width=device-width,initial-scale=1">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
   <!--bxslider -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script>
-     $(document).ready(function(){
-       $('.slider').bxSlider({
-         auto:true,
-         slideWidth: 300,
-         pager: false,
-         nextText:'Вперед',
-         slideSelector: 'img',
-         prevSelector: '.slider__prev_btn',
-         prevText: 'Назад',
-         autoControlsSelector: '.gallery__controls',
-         nextSelector: '.slider__next_btn',
-       });
-     });
-   </script>
-  <meta name="viewport" index-content="width=device-width,initial-scale=1">
+  <!-- Magnific Popup core JS file -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+
 </head>
 <body>
   <header class="page-header">
     <div class="page-header__wrapper">
+
+
+
+
       <a class="page-header__logo">
 				<img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
 			</a>
+
+
       <nav class="main-nav">
 
         <ul>
           <li class="active"><a href="#nowhere" title="Lorum ipsum dolor sit amet">ИНФОРМАЦИЯ</a></li>
           <li><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">НОВОСТИ</a></li>
           <li><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">ПРАЙС-ЛИСТ</a></li>
-          <li><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">МАГАЗИН</a></li>
+          <li><a href="catalog.html" title="Praesent dapibus, neque id cursus faucibus">МАГАЗИН</a></li>
           <li><a href="#nowhere" title="Pellentesque fermentum dolor">КОНТАКТЫ</a></li>
         </ul>
       </nav>
+
+
+
       <nav class="user-main-nav">
         <ul>
-          <li><a href="#">ВХОД</a></li>
+          <li><a class="user-main-nav__login" href="#login-popup">ВХОД</a></li>
 
         </ul>
       </nav>
+
+
+
+
     </div>
   </header>
 
@@ -184,24 +189,25 @@
 
   </footer>
   <!-- modal window -->
-  <div class="fade-out"></div>
-  <div class="index-content modal-form-login">
+<!--   <div class="fade-out"></div> -->
+  <div id="login-popup" class="index-content modal-form-login  mfp-hide">
     <img src="img/cross.png" class="modal-form-login__close">
     <h2>личный кабинет</h2>
     <p>ВВедите пожалуйста свой логин и пароль</p>
     <form class="modal-form-login__form" action="#" method="post">
       <div>
-        <input type="type" name="lk-login" id="lk-login-field">
-        <input type="type" name="lk-pass" id="lk-pass-field">
+        <input type="text" name="lk-login" class="modal-form-login__data-fileld"id="lk-login-field">
+        <input type="password" name="lk-pass" class="modal-form-login__data-fileld" id="lk-pass-field">
 				</div>
-      <label class="modal-form-login__lk-remember-checkbox">
-          <input type="checkbox" name="remember">
-          <span class="modal-form-login__checkbox-indicator"></span> Запомнить меня
-        </label>
+
+
+      <input type="checkbox" name="remember" class="modal-form-login__checkbox-remember" > <span>        Запомнить меня
+</span>
+
+
       <a href="#" class="modal-form-login__lk-forgot-pass">я забыл пароль</a>
-      <a href="#" class="buttons button--long">войти</a>
+      <a href="#" class="button button--long">войти</a>
     </form>
   </div>
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

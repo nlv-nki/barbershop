@@ -11,23 +11,21 @@
 }
 
 .footer__wrapper {
+  display: flex;
   width: 940px;
   margin: 0 auto;
   padding-top: 20px;
 }
 
 .footer-contacts {
-  float: left;
   width: 310px;
   margin-right: 90px;
 }
 
-.footer__social {
-  float: left;
-}
+
 
 .footer-copyright {
-  float: right;
   width: 150px;
   text-align: center;
+  margin-left: auto;
 }
