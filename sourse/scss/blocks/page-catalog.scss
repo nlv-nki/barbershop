@@ -42,7 +42,7 @@
 .page-catalog__shop-item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  //justify-content: flex-start;
   width: 216px;
   height: 275px;
   background-color: #f7f7f7;
@@ -53,7 +53,7 @@
   padding-bottom: 15px;
   button {
     margin-right: 0px;
-//    align-self: center;
+    cursor: pointer;
   }
   h2, button {
     margin-left: 16px;
@@ -70,6 +70,7 @@
 
 
 .page-catalog__shop-item-price {
+  margin-top: auto;
   text-align: right;
   width: 180px;
   padding-left: 5px;
