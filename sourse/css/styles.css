@@ -43,6 +43,18 @@ body {
   list-style-type: none;
   margin-right: 15px; }
 
+.shop-pages {
+  margin: 10px auto; }
+
+.shop-pages li {
+  width: 40px;
+  height: 40px;
+  float: left;
+  list-style-type: none;
+  background-color: black;
+  color: white;
+  padding: 5px; }
+
 .button {
   margin-right: 25px;
   text-decoration: none;
@@ -181,26 +193,30 @@ body {
   margin: 0 auto;
   width: 940px;
   /*временно для всех элементов */
-  color: #000000; }
+  color: #000000;
+  height: 100%; }
 
 .page-catalog__inner-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .page-catalog__shop-filters {
-  width: 230px;
+  width: 170px;
   margin: 10px; }
   .page-catalog__shop-filters li {
-    list-style-type: none; }
+    list-style-type: none;
+    width: 170px; }
   .page-catalog__shop-filters input[type=checkbox] {
     margin-right: 15px; }
 
 .page-catalog__shop-items {
-  width: 850px;
+  width: 730px;
   margin: 10px;
   margin-left: 20px;
   margin-right: 0px;
@@ -343,8 +359,8 @@ input::placeholder {
   background-color: #fff; }
 
 .footer {
-  clear: both;
   height: 194px;
+  width: 100%;
   background: url("../img/bg-footer.jpg") repeat; }
 
 .footer__wrapper {
