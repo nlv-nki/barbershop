@@ -202,7 +202,8 @@ body {
   width: 940px;
   /*временно для всех элементов */
   color: #000000;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 45px; }
 
 .page-catalog__inner-content {
   display: -webkit-box;
