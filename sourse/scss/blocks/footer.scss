@@ -1,13 +1,14 @@
+.footer {
+  height: 194px;
+  width: 100%;
+  background: url('../img/bg-footer.jpg') repeat;
+  margin-top: auto;
+}
+
 .footer .button:hover {
   color: #000;
   color: #f00;
   background-color: #fff;
-}
-
-.footer {
-  clear: both;
-  height: 194px;
-  background: url('../img/bg-footer.jpg') repeat;
 }
 
 .footer__wrapper {

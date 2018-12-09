@@ -1,3 +1,7 @@
 .body-page-catalog {
   background: url(../img/white-bg.jpg) repeat center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
 }
