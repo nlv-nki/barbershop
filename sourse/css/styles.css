@@ -10,7 +10,6 @@ body {
   color: #fff; }
 
 .body-page-catalog {
-  background: url(../img/white-bg.jpg) repeat center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +205,6 @@ body {
   margin: 0 auto; }
 
 .page-catalog {
-  background: url(../img/white-bg.jpg) repeat center;
   margin: 0 auto;
   width: 940px;
   /*временно для всех элементов */
