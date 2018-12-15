@@ -9,7 +9,11 @@ body {
   text-transform: uppercase;
   color: #fff; }
 
+.body-page-index {
+  background: url("../img/bg-b.jpg") top center no-repeat; }
+
 .body-page-catalog {
+  background-color: #f8f5f2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +280,7 @@ body {
     font-size: 14px; }
 
 .page-catalog__shop-item img {
-  width: 200px; }
+  width: 100%; }
 
 .page-catalog__shop-item-price {
   margin-top: auto;
