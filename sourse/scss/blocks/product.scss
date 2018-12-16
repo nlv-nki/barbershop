@@ -2,3 +2,34 @@
   display: flex;
   justify-content: space-between;
 }
+
+.product__photos {
+//  outline: 1px solid red;
+  width: 450px;
+}
+
+
+.product__description {
+  width: 390px;
+  margin: 10px;
+
+}
+
+.product__vendor-code {
+  float: right;
+  color: #aeaeae;
+}
+
+
+.product__purchase-block {
+  margin-left: 0px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  button {
+    margin-right: 0;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+
+}
