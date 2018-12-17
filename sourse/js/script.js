@@ -24,4 +24,21 @@ $(document).ready(function(){
  }
 
   $('.slider').bxSlider(param);
+
+
+  $('#image-gallery').lightSlider({
+      gallery:true,
+      item:1,
+      thumbItem:3,
+      slideMargin: 0,
+      speed:500,
+      auto:false,
+      loop:true,
+      onSliderLoad: function() {
+          $('#image-gallery').removeClass('cS-hidden');
+      }
+  });
+
+
+
 });
