@@ -8,22 +8,33 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+
   <!-- jquery -->
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
 
   <!--bxslider -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <!-- Magnific Popup core JS file -->
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <!-- lightslider-->
+  <script src="js/lightslider.js"></script>
+
+
+
 
 
 </head>
 <body class="body-page-catalog">
 
+
 <header class="page-header">
   <div class="page-header__wrapper page-header__wrapper--logo-s">
+
+
+
 
     <a href="index.html" class="page-header__logo page-header__logo--catalog">
       <img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
@@ -33,14 +44,15 @@
     <nav class="main-nav">
 
       <ul>
-
-        <li><a href="#nowhere" title="ИНФОРМАЦИЯ">ИНФОРМАЦИЯ</a></li>
+        <li class=""><a href="#nowhere" title="ИНФОРМАЦИЯ">ИНФОРМАЦИЯ</a></li>
         <li><a href="#nowhere" title="НОВОСТИ">НОВОСТИ</a></li>
         <li><a href="#nowhere" title="ПРАЙС-ЛИСТ">ПРАЙС-ЛИСТ</a></li>
         <li class="active"><a href="catalog.html"  title="МАГАЗИН">МАГАЗИН</a></li>
         <li><a href="#nowhere" title="КОНТАКТЫ">КОНТАКТЫ</a></li>
       </ul>
     </nav>
+
+
 
     <nav class="user-main-nav">
       <ul>
@@ -50,10 +62,10 @@
     </nav>
   </div>
 </header>
-<main class="page-catalog">
+<main class="page-catalog product">
 
-  <div class="page-catalog__inner-page-info">
-        <h1>Средства для ухода</h1>
+  <section class="page-catalog__inner-page-info">
+        <h1>набор для путешествий «Baxter of California»</h1>
         <ul class="breadcrumbs">
           <li>
             <a href="index.html">Главная</a>
@@ -61,117 +73,77 @@
           <li>
             <a href="shop.html">Магазин</a>
           </li>
-          <li class="current">Средства для ухода</li>
+          <li >Средства для ухода</li>
+          <li class="current">
+            набор для путешествий «Baxter of California»
+            </li>
         </ul>
+
+
+      </section>
+
+
+
+    <section class="product__inner-content">
+
+    <div class="product__photos">
+      <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+        <li data-thumb="img/products/product1-b.png" >
+          <img src="img/products/product1-b.png" />
+        </li>
+        <li data-thumb="img/products/product2-b.png" >
+          <img src="img/products/product2-b.png" />
+        </li>
+        <li data-thumb="img/products/product3-b.png" >
+          <img src="img/products/product3-b.png" />
+        </li>
+      </ul>    </div>
+
+    <div class="product__description">
+
+      <div class="product__status">
+
+
+        <span class="product__savailability">есть в наличии</span>
+
+        <span class="product__vendor-code">Артикул: dexter-ae</span>
+
+      </div>
+
+
+      <p class="product__description-text">
+      Travel Kit – необходимый аксессуар во время любого путешествия.
+      В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей
+       во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем,
+       крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+      </p>
+
+
+      <div class="page-catalog__shop-item-price product__purchase-block">
+        2900 РУБ.
+        <button class="button">КУПИТЬ</button>
+      </div>
+
+      <h2>В набор входят:</h2>
+
+      <ul class="product__description-list">
+        <li>Средство для умывания (50 мл)</li>
+        <li>Увлажняющий крем (50 мл) </li>
+        <li>Крем для бритья (50 мл)</li>
+        <li>Крем после бритья, шампунь (50 мл)</li>
+
+      </ul>
 
 
       </div>
 
-      <div class="page-catalog__inner-content">
-
-        <div class="page-catalog__shop-filters">
-          <h2 class="shop-filters__title"></h2>
-          <ul>
-            <li>
-
-              <input type="checkbox" name="" value="" id="baxter">
-              <label for="baxter">
-              Baxter of California
-              </label>
-
-            </li>
-            <li><input type="checkbox" name="" value="">Mr Natty</li>
-            <li><input type="checkbox" name="" value="">Suavecito</li>
-            <li><input type="checkbox" name="" value="">Malin+Goetz</li>
-            <li><input type="checkbox" name="" value="">Murray’s</li>
-            <li><input type="checkbox" name="" value="">American Crew</li>
-
-          </ul>
-         </div>
-
-         <div class="page-catalog__shop-items">
-
-        <div class="page-catalog__shop-item">
-
-          <img src="img/products/product1-s.png" />
-
-          <h2>Набор для путешествий</h2>
-          <div class="page-catalog__shop-item-price">
-            2900 РУБ.
-    <a class="button" href="product.html">КУПИТЬ</A>
-            </div>
 
 
-        </div>
-
-        <div class="page-catalog__shop-item">
-
-          <img src="img/products/product2-s.png" />
-
-          <h2>Набор для путешествий</h2>
-          <div class="page-catalog__shop-item-price">
-            2900 РУБ.
-          <a class="button">КУПИТЬ</a>
-            </div>
-
-        </div>
 
 
-        <div class="page-catalog__shop-item">
-
-          <img src="img/products/product3-s.png" />
-
-          <h2>Увлажняющий кондиционер  «Baxter of California»</h2>
-          <div class="page-catalog__shop-item-price">
-            2900 РУБ.
-    <a class="button">КУПИТЬ</a>
-            </div>
-        </div>
 
 
-        <div class="page-catalog__shop-item">
-
-          <img src="img/products/product4-s.png" />
-
-          <h2>Гель для волос «SUAVECITO»</h2>
-          <div class="page-catalog__shop-item-price">
-            2900 РУБ.
-    <a class="button">КУПИТЬ</a>
-            </div>
-
-        </div>
-
-
-        <div class="page-catalog__shop-item">
-
-          <img src="img/products/product5-s.png" />
-
-          <h2>Глина для укладки волос  «American crew»</h2>
-          <div class="page-catalog__shop-item-price">
-            2900 РУБ.
-    <a class="button">КУПИТЬ</a>
-            </div>
-        </div>
-         </div>
-                  <nav class="shop-pages">
-                              <ul>
-                                <li class="active">
-                                  <a class="btn" href="#">1</a>
-                                </li>
-                                <li>
-                                  <span class="btn btn-active" href="#">2</span>
-                                </li>
-                                <li>
-                                  <a class="btn" href="#">3</a>
-                                </li>
-                                <li>
-                                  <a class="btn" href="#">4</a>
-                                </li>
-                              </ul>
-                            </nav>
-
-        </div>
-
+    </section>
 </main>
 
   <footer class="footer">
