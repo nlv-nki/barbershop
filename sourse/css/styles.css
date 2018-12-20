@@ -362,8 +362,12 @@ body {
 .features__item p {
   width: 260px; }
 
+.gallery > .bx-wrapper {
+  height: 180px; }
+
 .gallery img {
-  border: 10px solid white; }
+  border: 10px solid white;
+  height: 164px; }
 
 .gallery a {
   cursor: pointer;
@@ -880,3 +884,11 @@ img.mfp-img {
 
 .modal-form-login__checkbox-remember {
   margin-right: 5px; }
+
+.modal-map {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 600px;
+  margin: 20px auto; }
