@@ -372,7 +372,8 @@ body {
 
 @media all and (max-width: 960px) {
   .index-content {
-    width: 600px; } }
+    width: 700px;
+    padding-left: 40px; } }
 
 .features {
   margin-top: 250px;
@@ -925,3 +926,7 @@ img.mfp-img {
   width: auto;
   max-width: 600px;
   margin: 20px auto; }
+
+@media all and (max-width: 960px) {
+  .news a.button {
+    float: right; } }
