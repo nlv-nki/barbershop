@@ -6,7 +6,9 @@
 }
 
 
-@media screen and (max-width:960px) {
-  width: 768px;
-
+@media all and (max-width:960px) {
+  .page-main {
+    width: 768px;
+    justify-content: center;
+  }
 }
