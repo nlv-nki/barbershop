@@ -370,7 +370,7 @@ body {
 .index-content p span {
   display: block; }
 
-@media (max-width: 960px) {
+@media all and (max-width: 960px) {
   .index-content {
     width: 600px; } }
 
