@@ -373,7 +373,9 @@ body {
 @media all and (max-width: 960px) {
   .index-content {
     width: 700px;
-    padding-left: 40px; } }
+    padding-left: 40px; }
+  .index-content--line {
+    background: #f9f4f0; } }
 
 .features {
   margin-top: 250px;
@@ -406,6 +408,10 @@ body {
 
 .gallery__controls {
   margin-top: -30px; }
+
+@media all and (max-width: 960px) {
+  .gallery {
+    margin-left: 185px; } }
 
 .order-form__cell-wrap {
   width: 300px;
@@ -452,6 +458,14 @@ input::placeholder {
 
 .order-form__button {
   margin-top: 5px; }
+
+@media all and (max-width: 960px) {
+  .order {
+    text-align: center; }
+    .order h2 {
+      text-align: left; }
+  .order-form__cell-wrap {
+    margin-left: 185px; } }
 
 .footer {
   height: 194px;
@@ -930,3 +944,8 @@ img.mfp-img {
 @media all and (max-width: 960px) {
   .news a.button {
     float: right; } }
+
+@media all and (max-width: 960px) {
+  .contacts .block-controls {
+    margin-left: 185px;
+    margin-top: 40px; } }

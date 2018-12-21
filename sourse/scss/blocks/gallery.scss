@@ -19,3 +19,10 @@
 .gallery__controls {
   margin-top: -30px;
 }
+
+
+@media all and (max-width:960px) {
+  .gallery {
+    margin-left: 185px;
+  }
+}
