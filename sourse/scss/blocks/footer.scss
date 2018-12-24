@@ -37,3 +37,28 @@
     width: 738px;
   }
 }
+
+
+@media  (max-width:320px) {
+  .footer {
+    height: auto;
+  }
+  .footer__wrapper {
+    width: 320px;
+    flex-wrap: wrap;
+
+    section {
+      width: 280px;
+    }
+
+
+    section.footer__social {
+      margin-left: 100px;
+    }
+
+
+  }
+
+
+
+}

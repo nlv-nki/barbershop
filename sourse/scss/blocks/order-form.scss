@@ -92,3 +92,12 @@
     margin-left: 185px;
   }
 }
+
+
+
+
+@media all and (max-width:320px) {
+  .order-form__cell-wrap {
+    margin-left: 0;
+  }
+}

@@ -30,3 +30,12 @@
     background: #f9f4f0;
   }
 }
+
+
+@media all and (max-width:320px) {
+  .index-content {
+    width: 300px;
+    padding: 0;
+
+  }
+}
