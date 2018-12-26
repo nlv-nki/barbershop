@@ -6,3 +6,17 @@
     }
   }
 }
+
+
+@media all and (max-width:320px) {
+  .contacts {
+    .block-controls {
+      margin-left: 85px;
+      margin-top: 40px;
+
+      a {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

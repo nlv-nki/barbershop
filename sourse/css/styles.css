@@ -114,6 +114,10 @@ body {
 .button:hover {
   background-color: #663d15; }
 
+@media all and (max-width: 320px) {
+  .button--long {
+    width: 230px; } }
+
 .box-button {
   width: 43px;
   min-height: 43px;
@@ -454,8 +458,9 @@ body {
 
 @media all and (max-width: 320px) {
   .index-content {
-    width: 300px;
-    padding: 0; } }
+    width: 280px;
+    padding: 5px;
+    height: auto; } }
 
 .features {
   margin-top: 250px;
@@ -553,6 +558,13 @@ input::placeholder {
 
 @media all and (max-width: 320px) {
   .order-form__cell-wrap {
+    margin-left: 0;
+    text-align: left; }
+  .order-form__cell {
+    float: none; }
+  .order-form__cell input {
+    width: 250px; }
+  .order-form__cell:nth-child(2n) input {
     margin-left: 0; } }
 
 .footer {
@@ -1049,3 +1061,10 @@ img.mfp-img {
   .contacts .block-controls {
     margin-left: 185px;
     margin-top: 40px; } }
+
+@media all and (max-width: 320px) {
+  .contacts .block-controls {
+    margin-left: 85px;
+    margin-top: 40px; }
+    .contacts .block-controls a {
+      margin-bottom: 20px; } }
