@@ -275,6 +275,7 @@ body {
   margin-left: auto; }
 
 .user-main-nav ul {
+  background-color: black;
   margin: 0; }
 
 .user-main-nav ul li {
@@ -403,6 +404,12 @@ body {
     width: auto;
     margin-right: 0px;
     margin-left: 25px; }
+
+@media (max-width: 960px) {
+  .page-catalog {
+    width: 760px; }
+  .page-catalog__shop-items {
+    width: 500px; } }
 
 .product__inner-content {
   display: -webkit-box;
