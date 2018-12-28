@@ -20,9 +20,23 @@
 }
 
 
-@media (max-width:960px) {
+@media all and (max-width:960px) {
   .index-content {
-    width: 600px;
+    width: 700px;
+    padding-left: 40px;
+    background: #f9f4f0;
+  }
+  .index-content--line {
+    background: #f9f4f0;
+  }
+}
+
+
+@media all and (max-width:320px) {
+  .index-content {
+    width: 280px;
+    padding: 5px;
+    height: auto;
 
   }
 }

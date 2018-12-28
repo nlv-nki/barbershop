@@ -4,6 +4,7 @@
 }
 
 .user-main-nav ul {
+  background-color: black;
   margin: 0;
 }
 
@@ -27,4 +28,11 @@
 .user-main-nav ul li:hover {
   cursor: pointer;
   background-color: #242424;
+}
+
+@media screen and (max-width:760px) {
+  .user-main-nav {
+    margin-left: 0;
+    display: none;
+  }
 }

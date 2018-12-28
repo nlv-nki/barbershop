@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп Бородински - Главная</title>
-  <meta name="viewport" index-content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -24,26 +24,22 @@
   <header class="page-header">
     <div class="page-header__wrapper">
 
-
-
-
       <a class="page-header__logo">
 				<img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
 			</a>
 
+      <nav class="main-nav" role='navigation'>
 
-      <nav class="main-nav">
-
-        <ul>
+        <ul class="active">
           <li class="active"><a href="#nowhere" title="ИНФОРМАЦИЯ">ИНФОРМАЦИЯ</a></li>
           <li><a href="#nowhere" title="НОВОСТИ">НОВОСТИ</a></li>
           <li><a href="#nowhere" title="ПРАЙС-ЛИСТ">ПРАЙС-ЛИСТ</a></li>
           <li><a href="catalog.html"  title="МАГАЗИН">МАГАЗИН</a></li>
           <li><a href="#nowhere" title="КОНТАКТЫ">КОНТАКТЫ</a></li>
         </ul>
+
+        <a class="main-nav__toggle-nav" href="#">&#9776;</a>
       </nav>
-
-
 
       <nav class="user-main-nav">
         <ul>
@@ -92,7 +88,7 @@
       <a class="button" href="#">ВСЕ НОВОСТИ</a>
     </section>
 
-    <section class="index-content">
+    <section class="index-content index-photo-slider">
       <h2>Фото</h2>
       <div class="gallery ">
           <div class="slider">
@@ -214,9 +210,6 @@
 
 
 </div>
-
-
-
 
 
 </body>
