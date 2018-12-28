@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Барбершоп Бородински - Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!-- jquery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
+  <!--bxslider -->
+  <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+  <!-- Magnific Popup core JS file -->
+  <!-- <script src="js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>  -->
+
+
+
+<style>
+
+  /*----- Toggle Button -----*/
+  .toggle-nav {
+  	display:none;
+  }
+
+  /*----- Menu -----*/
+  @media screen and (min-width: 860px) {
+  	.menu {
+  	width:100%;
+  	padding:10px 18px;
+  	box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+  	border-radius:3px;
+  	background:#303030;
+  	}
+  }
+
+
+
+
+  /*----- Responsive -----*/
+
+
+  @media screen and (max-width: 860px) {
+  	.menu {
+  		position:relative;
+  		display:inline-block;
+  	}
+
+  	.menu ul.active {
+  		display:none;
+  	}
+
+  	.menu ul {
+  		//width:100%;
+  		position:absolute;
+  		top:25%;
+  		left:0px;
+  		padding:10px 18px;
+  		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+  		border-radius:3px;
+  		background:#303030;
+  	}
+
+  	.menu ul:after {
+  		width:0px;
+  		height:0px;
+  		position:absolute;
+  		top:0%;
+  		left:22px;
+  		content:'';
+  		transform:translate(0%, -100%);
+  		border-left:7px solid transparent;
+  		border-right:7px solid transparent;
+  		border-bottom:7px solid #303030;
+  	}
+
+  	.menu li {
+  		margin:5px 0px 5px 0px;
+  		float:none;
+  		display:block;
+  	}
+
+  	.menu a {
+  		display:block;
+  	}
+
+  	.toggle-nav {
+  		padding:20px;
+  		float:left;
+  		display:inline-block;
+  		box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+  		border-radius:3px;
+  		background:#303030;
+  		text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+  		color:#777;
+  		font-size:20px;
+  		transition:color linear 0.15s;
+  	}
+
+  	.toggle-nav:hover, .toggle-nav.active {
+  		text-decoration:none;
+  		color:#66a992;
+  	}
+
+    .page-header__logo {
+      display:none;
+    }
+  }
+</style>
+
+
+
+
+<script>
+
+  jQuery(document).ready(function() {
+
+
+
+  	jQuery('.toggle-nav').click(function(e) {
+  		jQuery(this).toggleClass('active');
+  		jQuery('.menu ul').toggleClass('active');
+
+  		e.preventDefault();
+  	});
+
+
+
+  });
+
+
+</script>
+
+
+</head>
+
+<body>
+
+  <header class="page-header">
+    <div class="page-header__wrapper">
+  <a class="page-header__logo">
+        <img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
+      </a>
+
+      <nav class="menu main-nav" >
+
+        <ul>
+          <li class="active current-item"><a href="#nowhere" title="ИНФОРМАЦИЯ">ИНФОРМАЦИЯ</a></li>
+          <li><a href="#nowhere" title="НОВОСТИ">НОВОСТИ</a></li>
+          <li><a href="#nowhere" title="ПРАЙС-ЛИСТ">ПРАЙС-ЛИСТ</a></li>
+          <li><a href="catalog.html"  title="МАГАЗИН">МАГАЗИН</a></li>
+          <li><a href="#nowhere" title="КОНТАКТЫ">КОНТАКТЫ</a></li>
+        </ul>
+
+        <a class="toggle-nav" href="#">&#9776;</a>
+
+      </nav>
+
+      <nav class="user-main-nav">
+        <ul>
+          <li><a class="user-main-nav__login" href="#login-popup">ВХОД</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

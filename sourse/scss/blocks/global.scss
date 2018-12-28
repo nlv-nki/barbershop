@@ -7,5 +7,11 @@ body {
   margin: 0;
   text-transform: uppercase;
   color: #fff;
-//  background: url('../img/bg-b.jpg') top center no-repeat;
+}
+
+
+@media (max-width:960px) {
+  body {
+    min-width: 320px;
+  }
 }

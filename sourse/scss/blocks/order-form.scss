@@ -78,3 +78,38 @@
 .order-form__button {
   margin-top:5px;
 }
+
+
+
+@media all and (max-width:960px) {
+  .order {
+    text-align: center;
+    h2 {
+      text-align: left;
+    }
+  }
+  .order-form__cell-wrap {
+    margin-left: 185px;
+  }
+}
+
+
+
+
+@media all and (max-width:320px) {
+  .order-form__cell-wrap {
+    margin-left: 0;
+    text-align: left;
+  }
+  .order-form__cell {
+    float: none;
+  }
+  .order-form__cell input {
+    width: 250px;
+  }
+
+  .order-form__cell:nth-child(2n) input {
+    margin-left: 0;
+  }
+
+}

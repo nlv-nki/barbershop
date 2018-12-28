@@ -17,6 +17,14 @@
   margin-top: 30px;
 }
 
+
 .button:hover {
   background-color: #663d15;
+}
+
+
+@media all and (max-width:320px) {
+  .button--long {
+    width: 230px;
+  }
 }

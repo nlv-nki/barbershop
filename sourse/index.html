@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Барбершоп Бородински - Главная</title>
-  <meta name="viewport" index-content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -24,26 +24,22 @@
   <header class="page-header">
     <div class="page-header__wrapper">
 
-
-
-
       <a class="page-header__logo">
 				<img class="page-header__logo-image "src="img/index-logo.svg" alt="placeholder+image" width="368" height="204">
 			</a>
 
+      <nav class="main-nav" role='navigation'>
 
-      <nav class="main-nav">
-
-        <ul>
+        <ul class="active">
           <li class="active"><a href="#nowhere" title="ИНФОРМАЦИЯ">ИНФОРМАЦИЯ</a></li>
           <li><a href="#nowhere" title="НОВОСТИ">НОВОСТИ</a></li>
           <li><a href="#nowhere" title="ПРАЙС-ЛИСТ">ПРАЙС-ЛИСТ</a></li>
           <li><a href="catalog.html"  title="МАГАЗИН">МАГАЗИН</a></li>
           <li><a href="#nowhere" title="КОНТАКТЫ">КОНТАКТЫ</a></li>
         </ul>
+
+        <a class="main-nav__toggle-nav" href="#">&#9776;</a>
       </nav>
-
-
 
       <nav class="user-main-nav">
         <ul>
@@ -122,7 +118,7 @@
       </p>
 
       <div class="block-controls">
-        <a class="button"  href="#">КАК ПРОЕХАТЬ</a>
+        <a class="button modal-map-open"  href="#modal-map">КАК ПРОЕХАТЬ</a>
         <a class="button"  href="#">ОБРАТНАЯ СВЯЗЬ</a>
       </div>
 
@@ -206,5 +202,15 @@
       <a href="#" class="button button--long">войти</a>
     </form>
   </div>
+
+
+<div  id="modal-map" class="modal-map mfp-hide" >
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8949.231503131046!2d37.42558551977539!3d55.892019649999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1545340889622" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <p><a class="popup-modal__close" href="#">закрыть</a></p>
+
+
+</div>
+
+
 </body>
 </html>

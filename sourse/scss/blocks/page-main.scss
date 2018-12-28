@@ -4,3 +4,19 @@
   width: 940px;
   margin: 0 auto;
 }
+
+
+@media all and (max-width:960px) {
+  .page-main {
+    width: 768px;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width:320px) {
+  .page-main {
+    width: 320px;
+  //  justify-content: flex-start;
+  }
+}
