@@ -1080,3 +1080,7 @@ img.mfp-img {
     margin-top: 40px; }
     .contacts .block-controls a {
       margin-bottom: 20px; } }
+
+@media (max-width: 320px) {
+  .index-photo-slider {
+    display: none; } }
