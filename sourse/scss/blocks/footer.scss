@@ -50,12 +50,33 @@
     section {
       width: 280px;
     }
+    section.footer-contacts {
+      margin: 0;
+    //  padding-left: 25px;
 
-
-    section.footer__social {
-      margin-left: 100px;
+      p {
+        padding-left: 15px;
+      }
     }
 
+    section.footer__social {
+      margin-left: 90px;
+
+      p {
+        padding-left: 15px;
+      }
+    }
+
+
+    section.footer-copyright {
+      margin-left: 90px;
+      margin-bottom: 30px;
+      text-align: left;
+
+      p {
+        margin-left: 35px;
+      }
+    }
 
   }
 

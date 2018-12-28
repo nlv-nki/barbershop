@@ -608,8 +608,20 @@ input::placeholder {
         flex-wrap: wrap; }
     .footer__wrapper section {
       width: 280px; }
+    .footer__wrapper section.footer-contacts {
+      margin: 0; }
+      .footer__wrapper section.footer-contacts p {
+        padding-left: 15px; }
     .footer__wrapper section.footer__social {
-      margin-left: 100px; } }
+      margin-left: 90px; }
+      .footer__wrapper section.footer__social p {
+        padding-left: 15px; }
+    .footer__wrapper section.footer-copyright {
+      margin-left: 90px;
+      margin-bottom: 30px;
+      text-align: left; }
+      .footer__wrapper section.footer-copyright p {
+        margin-left: 35px; } }
 
 .social-nets__s-icon {
   width: 22px;
